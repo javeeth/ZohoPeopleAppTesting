@@ -19,7 +19,7 @@ public class ZohoAppTest extends BaseAction {
 
     @AfterTest
     void tearDown(){
-        appiumDriver.quit();
+        endSession();
     }
 }
 
