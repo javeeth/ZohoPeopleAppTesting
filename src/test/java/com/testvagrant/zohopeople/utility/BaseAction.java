@@ -18,6 +18,7 @@ public class BaseAction {
         desiredCapabilities.setCapability("app", "/Users/javeethbasha/Downloads/Zoho.apk");
         desiredCapabilities.setCapability("platformName", "android");
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Google Pixel");
+        desiredCapabilities.setCapability("appWaitActivity", "com.zoho.people.activities.LoaderActivity");
 
         try{
             service = AppiumDriverLocalService.buildDefaultService();
